@@ -20,10 +20,12 @@ public class StepLambdaRepositoryTest extends BasePage {
     public void checkNameIssuesOnRepositoryLambdaTest() {
 
         step("Go to repository page " + repositoryUrl, () -> {
+
                     open(repositoryUrl);
                 });
 
         step("Find element for issues on page", () -> {
+
             $("span[data-content='Issues']").shouldBe(visible, Duration.ofSeconds(5));
         });
 

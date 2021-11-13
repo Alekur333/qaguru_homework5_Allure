@@ -15,6 +15,7 @@ public class RepositoryPage {
     }
 
     public void elementIssuesShouldBeNamedIssues() {
+
         $(issuesTabLocator).shouldHave(text("Issues"));
     }
 
